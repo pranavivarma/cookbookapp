@@ -8,7 +8,7 @@ import Profile from "./pages/Profile"; // Import Profile component
 import Login from "./pages/Login"; // Import Login component
 import Register from "./pages/Register"; // Import Register component
 import Navbar from "./components/Navbar"; // Import Navbar component
-import Footer from "./components/Footer"; // Import Footer component
+import Footer from "./components/footer"; // Import Footer component
 import "./styles.css";
 
 const App = () => {
