@@ -1,4 +1,5 @@
 import React from "react";
+<<<<<<< HEAD
 import { BrowserRouter as Router, Route, Routes, Link, useLocation } from "react-router-dom";
 import "./Styles.css";
 
@@ -112,6 +113,19 @@ const Footer = () => (
     <p>&copy; 2025 Cookbook. All rights reserved.</p>
   </footer>
 );
+=======
+import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
+import Home from "./pages/Home"; // Import Home component
+import Dashboard from "./pages/Dashboard"; // Import Dashboard component
+import Recipes from "./pages/Recipes"; // Import Recipes component
+import Communities from "./pages/Communities"; // Import Communities component
+import Profile from "./pages/Profile"; // Import Profile component
+import Login from "./pages/Login"; // Import Login component
+import Register from "./pages/Register"; // Import Register component
+import Navbar from "./components/Navbar"; // Import Navbar component
+import Footer from "./components/Footer"; // Import Footer component
+import "./styles.css";
+>>>>>>> a509987 (updated cookbook)
 
 const App = () => {
   const location = useLocation();
@@ -120,6 +134,10 @@ const App = () => {
 
   return (
     <div className="app-container">
+<<<<<<< HEAD
+=======
+  
+>>>>>>> a509987 (updated cookbook)
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/dashboard" element={<Dashboard />} />
