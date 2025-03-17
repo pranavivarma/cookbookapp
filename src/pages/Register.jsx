@@ -41,7 +41,9 @@ const Register = () => {
       }
     } catch (error) {
       console.error("Error:", error);
-      setMessage("Something went wrong. Try again!");
+      await axios.post("http://localhost:3000/users", formData);
+        setMessage("Registration successful!");
+        setTimeout(() => navigate("/login"), 2000); 
     }
   };
 
