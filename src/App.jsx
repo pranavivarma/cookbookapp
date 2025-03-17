@@ -18,7 +18,7 @@ const App = () => {
 
   return (
     <div className="app-container">
-      <Navbar />
+      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/dashboard" element={<Dashboard />} />
