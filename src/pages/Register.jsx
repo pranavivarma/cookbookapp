@@ -22,7 +22,7 @@ const Register = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.get("http://localhost:3000/users");
+      const response = await axios.get("https://cookbook-server-2.onrender.com/users");
       const users = response.data;
 
       // Check if email or username already exists
@@ -35,7 +35,7 @@ const Register = () => {
         setMessage("Username already taken!");
       } else {
         // Save new user to JSON Server
-        await axios.post("http://localhost:3000/users", formData);
+        await axios.post("https://cookbook-server-2.onrender.com/users", formData);
         setMessage("Registration successful!");
         setTimeout(() => navigate("/login"), 2000); // Redirect to login page after 2 seconds
       }

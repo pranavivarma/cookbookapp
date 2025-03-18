@@ -14,7 +14,7 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.get("http://localhost:3000/users");
+      const response = await axios.get("https://cookbook-server-2.onrender.com/users");
       const users = response.data;
 
       const user = users.find(
